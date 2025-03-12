@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <body>
+  <p align='center'>
+    <span style='color:red'>Dining Count</span>
+    <span style='color:blue'> on Date:2025-1-24</span>
+  </p>
+  <form method="post" action="./DiningCountServlet">
+    <table align ='center' border='1' style='border-collapse:collapse'>
+      <tr>
+        <th>Date</th>
+        <th>Boys</th>
+        <th>Girls</th>
+        <th>Medical Staff</th>
+        <th>Mess Staff</th>
+        <th>Sports</th>
+        <th>Events</th>
+        <th>Parents</th>
+      </tr>
+      <tr>
+        <td><input type="date" name="dining_date" id="dining_date" required></td>
+        <td><input type="number" name="boys" id="boys" required></td>
+        <td><input type="number" name="girls" id="girls" required></td>
+        <td><input type="number" name="medical_staff" id="medical_staff" required></td>
+        <td><input type="number" name="mess_staff" id="mess_staff" required></td>
+        <td><input type="number" name="sports" id="sports" required></td>
+        <td><input type="number" name="events" id="events" required></td>
+        <td><input type="number" name="parents" id="parents" required></td>
+      </tr>
+      <tr>
+        <th colspan='2'><input type="submit" name="submit" value="Submit"></th>
+        <td colspan='6'><input type="reset" name="clear" value="Clear"></td>
+      </tr>
+    </table>
+  </form>
+ </body>
+</html>
